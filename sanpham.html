@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Coffee</title>
+    <link rel="icon" href="images/logo/coffeebrand.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-gradient sticky-top">
+            <div class="container">
+                <!-- Logo + Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo/coffeebrand.png" alt="LATEER">
+                    LATEER
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-house-door-fill nav-icon"></i>Trang chủ
+                            </a>
+                        </li>
+
+                        <!-- Sản phẩm -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="sanpham.html">
+                                <i class="bi bi-cup-hot-fill nav-icon"></i>Sản phẩm
+                            </a>
+                        </li>
+
+                        <!-- Giỏ hàng -->
+                        <li class="nav-item">
+                            <a href="giohang.html" class="nav-link">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </li>
+
+                        <!-- Tìm kiếm -->
+                        <form class="d-flex ms-3 me-3">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <button class="btn btn-warning text-white" type="submit">🔍</button>
+                        </form>
+
+                        <!-- Đăng nhập/Đăng xuất -->
+                        <li class="nav-item">
+                            <button class="btn btn-login ms-lg-2 mt-2 mt-lg-0">
+                                <a href="dangnhap.html" style="color: black;
+                                                                text-decoration: none;
+                                                                color: rgb(224, 170, 20) !important;
+                                                                font-weight: 500;">
+                                    <i class="bi bi-box-arrow-in-right nav-icon"></i>Đăng nhập
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="py-5">
+        <div class="container">
+            <!-- Tiêu đề -->
+            <h2 class="text-center mb-5 fw-bold" style="color: #5c4033;">Tất cả sản phẩm</h2>
+
+            <!-- Danh mục sản phẩm -->
+            <section class="container mb-5">
+                <h2 class="text-center mb-4"></h2>
+                <div class="row text-center">
+
+                    <!-- SP1 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/hatnguyenchat.jpg" class="card-img-top"
+                                alt="Cà phê hạt nguyên chất">
+                            <div class="card-body">
+                                <h5 class="card-title">Cà phê hạt nguyên chất</h5>
+                                <p class="text-danger fw-bold">235.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp1">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP2 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/rangmoc.jpg" class="card-img-top" alt="Cà phê rang mộc">
+                            <div class="card-body">
+                                <h5 class="card-title">Cà phê rang mộc</h5>
+                                <p class="text-danger fw-bold">150.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp2">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP3 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/phingiay.jpg" class="card-img-top" alt="Cà phê phin truyền thống">
+                            <div class="card-body">
+                                <h5 class="card-title">Cà phê phin truyền thống</h5>
+                                <p class="text-danger fw-bold">90.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp3">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP4 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/denhoatan.jpg" class="card-img-top" alt="Cà phê đen hòa tan">
+                            <div class="card-body">
+                                <h5 class="card-title">Cà phê đen hòa tan</h5>
+                                <p class="text-danger fw-bold">85.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp5">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP5 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/Robusta .jpg" class="card-img-top" alt="Cà phê Robusta">
+                            <div class="card-body">
+                                <h5 class="card-title">Cà phê Robusta</h5>
+                                <p class="text-danger fw-bold">260.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp7">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SP6 -->
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <img src="images/sanpham/EspressoBlend.jpg" class="card-img-top" alt="Espresso Blend">
+                            <div class="card-body">
+                                <h5 class="card-title">Espresso Blend</h5>
+                                <p class="text-danger fw-bold">270.000đ</p>
+                                <a href="#" class="btn btn-warning text-white" data-bs-toggle="modal"
+                                    data-bs-target="#sp8">Xem ngay </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Modal chi tiết sản phẩm -->
+            <!-- SP1 -->
+            <div class="modal fade" id="sp1" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cà phê hạt nguyên chất - 235.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/hatnguyenchat.jpg" class="img-fluid mb-3" alt="">
+                            <p>Cà phê hạt được rang từ 100% cà phê sạch, không pha tạp, không hương liệu.
+                                Người dùng có thể xay theo độ mịn mong muốn để pha phin, máy hoặc pour-over.</p>
+                            <p><b>Khối lượng:</b> 500g.</p>
+                            <p><strong>Giá:</strong> 235.000đ</p>
+                            <p><b>Xuất xứ:</b> Buôn Ma Thuột</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP2 -->
+            <div class="modal fade" id="sp2" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cà phê rang mộc - 150.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/rangmoc.jpg" class="img-fluid mb-3" alt="">
+                            <p>Cà phê xay sẵn được đóng gói trong túi lọc giấy nhỏ gọn. Khi pha chỉ cần đặt
+                                túi lọc lên ly và rót nước nóng, tiện lợi, nhanh chóng, hợp cho người bận rộn.</p>
+                            <p><b>Khối lượng:</b> 500g.</p>
+                            <p><strong>Giá:</strong> 150.000đ</p>
+                            <p><b>Xuất xứ:</b> Gia Lai</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP3 -->
+            <div class="modal fade" id="sp3" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cà phê phin truyền thống - 90.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/phingiay.jpg" class="img-fluid mb-3" alt="">
+                            <p>Cà phê được rang thủ công, không tẩm ướp hay pha trộn phụ gia.
+                                Hương vị đậm đà, nguyên bản, giữ được đặc trưng tự nhiên của hạt cà phê.</p>
+                            <p><strong>Giá:</strong> 90.000đ</p>
+                            <p><b>Khối lượng:</b> 250g.</p>
+                            <p><b>Xuất xứ:</b> Gia Lai</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP4 -->
+            <div class="modal fade" id="sp5" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cà phê đen hòa tan - 85.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/denhoatan.jpg" class="img-fluid mb-3" alt="">
+                            <p>Cà phê hòa tan tiện lợi, nhanh chóng, phù hợp cho người bận rộn.
+                                Giữ trọn hương vị cà phê thơm ngon chỉ trong vài giây.</p>
+                            <p><strong>Giá:</strong> 85.000đ</p>
+                            <p><b>Khối lượng:</b> 15 gói.</p>
+                            <p><b>Xuất xứ:</b> Đà Lạt</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP5 -->
+            <div class="modal fade" id="sp7" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cà phê Robusta - 260.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/Robusta .jpg" class="img-fluid mb-3" alt="">
+                            <p>Robusta từ vùng đất đỏ bazan Đắk Lắk, hương vị mạnh mẽ, đắng đậm, nhiều caffeine, thích
+                                hợp pha phin truyền thống.</p>
+                            <p><strong>Giá:</strong> 260.000đ</p>
+                            <p><b>Khối lượng:</b> 500g.</p>
+                            <p><b>Xuất xứ:</b> Đắk Lắk</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SP6 -->
+            <div class="modal fade" id="sp8" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Espresso Blend - 270.000đ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sanpham/EspressoBlend.jpg" class="img-fluid mb-3" alt="">
+                            <p>Espresso House Blend là sự pha trộn giữa Arabica và Robusta, tạo vị cân bằng, crema đẹp,
+                                lý tưởng cho máy pha Espresso.</p>
+                            <p><strong>Giá:</strong> 200.000đ</p>
+                            <p><b>Khối lượng:</b> 500g.</p>
+                            <p><b>Xuất xứ:</b> Lâm Đồng</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <footer class="pt-5 pb-4" style="background-color: #f3e9dc; color: #5c4033;">
+            <div class="container text-md-left">
+                <div class="row text-md-left">
+
+                    <!-- Thông tin liên hệ -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">LATEER BRAND</h5>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>218 Lý Thần Tông, phường Hương An, Quận Phú Xuân,
+                            Thành phố Huế</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>0909 123 456</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>support@lateerbrand.vn</p>
+                    </div>
+
+                    <!-- Mạng xã hội -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">Kết nối với chúng tôi</h5>
+
+                        <!-- Facebook -->
+                        <p>
+                            <i class="bi bi-facebook me-2"></i>
+                            <a href="https://www.facebook.com/lateer" class="text-decoration-none"
+                                style="color: #5c4033;" target="_blank">
+                                Facebook
+                            </a>
+                        </p>
+
+                        <!-- Zalo -->
+                        <p>
+                            <i class="bi bi-chat-dots-fill me-2"></i>
+                            <a href="https://zalo.me/0909123456" class="text-decoration-none" style="color: #5c4033;"
+                                target="_blank">
+                                Zalo: 0909 123 456
+                            </a>
+                        </p>
+
+                        <!-- Email -->
+                        <p>
+                            <i class="bi bi-envelope-check-fill me-2"></i>
+                            <a href="mailto:support@lateer.vn" class="text-decoration-none" style="color: #5c4033;"
+                                target="_blank">
+                                Email: support@lateer.vn
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Chính sách -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">Chính sách</h5>
+                        <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                    class="bi bi-chevron-right me-2"></i>Chính sách đổi trả</a></p>
+                        <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                    class="bi bi-chevron-right me-2"></i>Chính sách bảo mật</a></p>
+                        <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                    class="bi bi-chevron-right me-2"></i>Chính sách vận chuyển</a></p>
+                    </div>
+
+                </div>
+
+                <!-- Copyright -->
+                <hr class="my-4" style="border-color: #d1c1b2;">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center">
+                        <p class="mb-0">&copy; 2025 <strong>LATEER BRAND</strong>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+   /* Gradient background cho navbar */
+    .navbar-gradient {
+      background: linear-gradient(90deg, #925843fc, #7a4e19, #964c4c);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgb(99, 177, 120) !important;
+    }
+
+    .navbar-brand img {
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: rgb(224, 170, 20) !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #fdd9a0 !important;
+    }
+
+    .btn-login {
+      background-color: #f3ebe9;
+      color: #e7e0de;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login:hover {
+      background-color: #d9d8d8;
+    }
+
+    .nav-icon {
+      margin-right: 6px;
+    }

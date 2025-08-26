@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Coffee</title>
+    <link rel="icon" href="images/logo/coffeebrand.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-gradient sticky-top">
+            <div class="container">
+                <!-- Logo + Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo/coffeebrand.png" alt="LATEER">
+                    LATEER
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-house-door-fill nav-icon"></i>Trang chủ
+                            </a>
+                        </li>
+
+                        <!-- Sản phẩm -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="sanpham.html">
+                                <i class="bi bi-cup-hot-fill nav-icon"></i>Sản phẩm
+                            </a>
+                        </li>
+
+                        <!-- Giỏ hàng -->
+                        <li class="nav-item">
+                            <a href="giohang.html" class="nav-link">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </li>
+
+                        <!-- Tìm kiếm -->
+                        <form class="d-flex ms-3 me-3">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <button class="btn btn-warning text-white" type="submit">🔍</button>
+                        </form>
+
+                        <!-- Đăng nhập/Đăng xuất -->
+                        <li class="nav-item">
+                            <button class="btn btn-login ms-lg-2 mt-2 mt-lg-0">
+                                <a href="dangnhap.html" style="color: black;
+                                                                text-decoration: none;
+                                                                color: rgb(224, 170, 20) !important;
+                                                                font-weight: 500;">
+                                    <i class="bi bi-box-arrow-in-right nav-icon"></i>Đăng nhập
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner / Carousel -->
+        <section class="mb-5">
+            <div id="coffeeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner/banner3.jpg" class="d-block w-100" alt="Banner 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#coffeeCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#coffeeCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Danh mục sản phẩm -->
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Danh mục sản phẩm</h2>
+            <div class="row text-center">
+                <!-- Cà phê hạt -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="images/danhmuc/cafehat.jpg" class="card-img-top" alt="Cà phê hạt">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê hạt</h5>
+                            <p class="card-text text-danger fw-bold">160.000đ</p>
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#modalCafeHat">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cà phê rang xay -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="images/danhmuc/cfrangxay.jpg" class="card-img-top" alt="Cà phê rang xay">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê rang xay</h5>
+                            <p class="card-text text-danger fw-bold">180.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#modalRangXay">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cà phê hòa tan -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="images/danhmuc/cafehoatan.jpg" class="card-img-top" alt="Cà phê hòa tan">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê hòa tan</h5>
+                            <p class="card-text text-danger fw-bold">85.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#modalHoaTan">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Máy pha coffee -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="images/danhmuc/maypha.jpg" class="card-img-top" alt="Máy pha coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Máy pha coffee</h5>
+                            <p class="card-text text-danger fw-bold">2.500.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#modalMayPha">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MODALS ================= -->
+        <!-- Modal Cà phê hạt -->
+        <div class="modal fade" id="modalCafeHat" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cà phê hạt</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/danhmuc/cafehat.jpg" class="img-fluid mb-3" alt="Cà phê hạt">
+                        <p>Cà phê hạt nguyên chất, được tuyển chọn từ những vùng trồng cà phê nổi tiếng.
+                            Hạt cà phê rang mộc, giữ trọn hương vị tự nhiên, phù hợp cho pha máy và pha phin.</p>
+                        <p><b>Xuất xứ: </b> Buôn Ma Thuột, Lâm Đồng</p>
+                        <p><b>Đóng gói:</b> 500g </p>
+                        <p><b>Giá:</b> 120.000đ/kg</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-success">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cà phê rang xay -->
+        <div class="modal fade" id="modalRangXay" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cà phê rang xay</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/danhmuc/cfrangxay.jpg" class="img-fluid mb-3" alt="Cà phê rang xay">
+                        <p>Cà phê rang xay sẵn, hương thơm đậm đà, vị cân bằng.
+                            Dễ dàng sử dụng cho người yêu thích pha phin hoặc pha máy.</p>
+                        <p><b>Xuất xứ: </b> Đà Lạt, Gia Lai</p>
+                        <p><b>Đóng gói:</b> 500g </p>
+                        <p><b>Giá:</b> 180.000đ/kg</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-success">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cà phê hòa tan -->
+        <div class="modal fade" id="modalHoaTan" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cà phê hòa tan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/danhmuc/cafehoatan.jpg" class="img-fluid mb-3" alt="Cà phê hòa tan">
+                        <p>Cà phê hòa tan tiện lợi, nhanh chóng, phù hợp cho người bận rộn.
+                            Giữ trọn hương vị cà phê thơm ngon chỉ trong vài giây.</p>
+                        <p><b>Đóng gói:</b> 15 gói </p>
+                        <p><b>Giá:</b> 85.000đ/kg</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-success">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Máy pha coffee -->
+        <div class="modal fade" id="modalMayPha" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Máy pha coffee</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/danhmuc/maypha.jpg" class="img-fluid mb-3" alt="Máy pha coffee">
+                        <p>Máy pha cà phê hiện đại, thiết kế nhỏ gọn, phù hợp cho gia đình và văn phòng.
+                            Dễ dàng sử dụng, tiết kiệm thời gian, mang đến hương vị cà phê thơm ngon chuẩn barista.</p>
+                        <p><b>Xuất xứ: </b> Pháp </p>
+                        <p><b>Bảo hành:</b> 12 tháng </p>
+                        <p><b>Giá:</b> 2.500.000đ/kg</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-success">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm nổi bật -->
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Sản phẩm nổi bật</h2>
+            <div class="row">
+
+                <!-- SP 1: Arabica Premium -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/sphamnoibat/arabica.jpg" class="card-img-top" alt="Arabica Premium">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arabica Premium</h5>
+                            <p class="card-text text-danger fw-bold">250.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#arabicaModal">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 2: Robusta Đắk Lắk -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/sphamnoibat/Robusta .jpg" class="card-img-top" alt="Robusta Đắk Lắk">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Robusta Đắk Lắk</h5>
+                            <p class="card-text text-danger fw-bold">180.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#robustaModal">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 3: Culi Blend -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/sphamnoibat/culi.jpg" class="card-img-top" alt="Culi Blend">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Culi Blend</h5>
+                            <p class="card-text text-danger fw-bold">220.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#culiModal">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 4: Espresso House Blend -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/sphamnoibat/EspressoBlend.jpg" class="card-img-top" alt="Espresso House Blend">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Espresso House Blend</h5>
+                            <p class="card-text text-danger fw-bold">200.000đ</p>
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal"
+                                data-bs-target="#espressoModal">
+                                Xem ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal Arabica -->
+            <div class="modal fade" id="arabicaModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Arabica Premium</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sphamnoibat/arabica.jpg" class="img-fluid mb-3 rounded">
+                            <p>Arabica Premium được tuyển chọn từ vùng núi cao trên 1200m, hương thơm dịu, vị chua thanh
+                                và hậu vị ngọt.</p>
+                            <p><strong>Giá:</strong> 250.000đ</p>
+                            <p><strong>Khối lượng:</strong> 500g</p>
+                            <p><strong>Xuất xứ:</strong> Lâm Đồng, Việt Nam</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Robusta -->
+            <div class="modal fade" id="robustaModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Robusta Đắk Lắk</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sphamnoibat/Robusta .jpg" class="img-fluid mb-3 rounded">
+                            <p>Robusta từ vùng đất đỏ bazan Đắk Lắk, hương vị mạnh mẽ, đắng đậm, nhiều caffeine, thích
+                                hợp pha phin truyền thống.</p>
+                            <p><strong>Giá:</strong> 200.000đ</p>
+                            <p><strong>Khối lượng:</strong> 500g</p>
+                            <p><strong>Xuất xứ:</strong> Đắk Lắk, Việt Nam</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Culi -->
+            <div class="modal fade" id="culiModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Culi Blend</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sphamnoibat/culi.jpg" class="img-fluid mb-3 rounded">
+                            <p>Culi Blend là sự kết hợp độc đáo của hạt cà phê tròn, hương thơm mạnh, vị đắng dịu và
+                                caffeine cao.</p>
+                            <p><strong>Giá:</strong> 220.000đ</p>
+                            <p><strong>Khối lượng:</strong> 500g</p>
+                            <p><strong>Xuất xứ:</strong> Tây Nguyên, Việt Nam</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Espresso -->
+            <div class="modal fade" id="espressoModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Espresso House Blend</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sphamnoibat/EspressoBlend.jpg" class="img-fluid mb-3 rounded">
+                            <p>Espresso House Blend là sự pha trộn giữa Arabica và Robusta, tạo vị cân bằng, crema đẹp,
+                                lý tưởng cho máy pha Espresso.</p>
+                            <p><strong>Giá:</strong> 270.000đ</p>
+                            <p><strong>Khối lượng:</strong> 500g</p>
+                            <p><strong>Xuất xứ:</strong> Việt Nam</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button class="btn btn-warning text-white">Thêm vào giỏ hàng</button>
+                            <button class="btn btn-success">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Giới thiệu thương hiệu -->
+        <section class="py-5" style="background-color: #f8f9fa;">
+            <div class="container text-center">
+                <h2>Về LATEER Coffee</h2>
+                <p class="mt-3">Chúng tôi cam kết mang đến cho khách hàng những hạt cà phê chất lượng cao, được chọn lọc
+                    kỹ lưỡng từ nông trại đến ly cà phê.
+                    Với quy trình rang xay hiện đại và công thức pha chế độc quyền, LATEER Coffee không chỉ là cà phê –
+                    đó là trải nghiệm.</p>
+                <a href="gioithieu.html" class="btn btn-dark">Tìm hiểu thêm</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="pt-5 pb-4" style="background-color: #f3e9dc; color: #5c4033;">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+
+                <!-- Thông tin liên hệ -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">LATEER BRAND</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>218 Lý Thần Tông, phường Hương An, Quận Phú Xuân,
+                        Thành phố Huế</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>0909 123 456</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>support@lateerbrand.vn</p>
+                </div>
+
+                <!-- Mạng xã hội -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">Kết nối với chúng tôi</h5>
+
+                    <!-- Facebook -->
+                    <p>
+                        <i class="bi bi-facebook me-2"></i>
+                        <a href="https://www.facebook.com/lateer" class="text-decoration-none" style="color: #5c4033;"
+                            target="_blank">
+                            Facebook
+                        </a>
+                    </p>
+
+                    <!-- Zalo -->
+                    <p>
+                        <i class="bi bi-chat-dots-fill me-2"></i>
+                        <a href="https://zalo.me/0909123456" class="text-decoration-none" style="color: #5c4033;"
+                            target="_blank">
+                            Zalo: 0909 123 456
+                        </a>
+                    </p>
+
+                    <!-- Email -->
+                    <p>
+                        <i class="bi bi-envelope-check-fill me-2"></i>
+                        <a href="mailto:support@lateer.vn" class="text-decoration-none" style="color: #5c4033;"
+                            target="_blank">
+                            Email: support@lateer.vn
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Chính sách -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold" style="color: #a86c3c;">Chính sách</h5>
+                    <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                class="bi bi-chevron-right me-2"></i>Chính sách đổi trả</a></p>
+                    <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                class="bi bi-chevron-right me-2"></i>Chính sách bảo mật</a></p>
+                    <p><a href="#" class="text-decoration-none" style="color: #5c4033;"><i
+                                class="bi bi-chevron-right me-2"></i>Chính sách vận chuyển</a></p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <hr class="my-4" style="border-color: #d1c1b2;">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 <strong>LATEER BRAND</strong>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
